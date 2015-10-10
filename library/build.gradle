@@ -24,6 +24,9 @@ android {
 
         versionCode libVersionCode
         versionName libVersionName
+        renderscriptTargetApi rootProject.ext.getAt("androidCompileSdkVersion")
+        renderscriptSupportModeEnabled true
+
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
